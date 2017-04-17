@@ -61,6 +61,8 @@ insert into mesa values(7,'disponible',1);
 insert into orden_de_pedido values(8,'2017-04-18',1,2);
 insert into orden_de_pedido values(9,'12/04/17',2,4);
 insert into orden_de_pedido values(10,'12/04/17',3,5);
+insert into orden_de_pedido values(11,'12/04/17',3,5);
+
 
 
 insert into plato values(20,8,"pollo con papa",200);
