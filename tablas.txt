@@ -26,9 +26,6 @@ foreign key(id_cliente) references cliente (id_cliente));
 create table bar (id_bar integer primary key, nombre varchar (30));
 
 
-
-
-
 insert into cliente values(1, 'fran', 125478);
 insert into cliente values(2, 'sergio',14888);
 insert into cliente values(3, 'david', 455788);
@@ -63,5 +60,10 @@ nsert into reserva(id_reserva,fecha,id_mesa,id_bar,id_cliente) values(20,'2017-0
 insert into reserva(id_reserva,fecha,id_mesa,id_bar,id_cliente) values(21,'2017-04-18',2,11,2);
 insert into reserva(id_reserva,fecha,id_mesa,id_bar,id_cliente) values(22,'2017-04-18',2,11,3);
 
+
+
+
+
+yesi
 
 
