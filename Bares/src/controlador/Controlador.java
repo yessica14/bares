@@ -9,7 +9,7 @@ import Modelo.*;
  *
  * @author Yessica-
  */
-public class Main {
+public class Controlador {
   
     
 }
