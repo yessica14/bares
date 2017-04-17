@@ -22,6 +22,9 @@ private Plato plato;
         this.mesero = mesero;
         this.fecha = fecha;
     }
+    
+    
+    
 
     public TipodeBebida getBebida() {
         return bebida;
@@ -43,6 +46,9 @@ private Plato plato;
 
    
 
+    
+    
+    
     public Fecha getFecha() {
         return fecha;
     }
