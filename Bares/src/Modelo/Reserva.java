@@ -19,6 +19,8 @@ private Fecha fecha;
     public Reserva() {
     }
 
+    
+    
 
 
     public Reserva(int nroReserva, Mesa mesa, Cliente cliente, int cantdepersonas, Fecha fecha) {
