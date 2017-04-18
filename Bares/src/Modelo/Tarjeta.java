@@ -10,5 +10,24 @@ package Modelo;
  * @author Yessica-
  */
 public class Tarjeta {
+private int nro_de_tarjeta;
+
+    public Tarjeta(int nro_de_tarjeta) {
+        this.nro_de_tarjeta = nro_de_tarjeta;
+    }
+
+    public int getNro_de_tarjeta() {
+        return nro_de_tarjeta;
+    }
+
+    public void setNro_de_tarjeta(int nro_de_tarjeta) {
+        this.nro_de_tarjeta = nro_de_tarjeta;
+    }
+
+    @Override
+    public String toString() {
+        return "Tarjeta{" + "nro_de_tarjeta=" + nro_de_tarjeta + '}';
+    }
     
+
 }
