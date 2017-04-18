@@ -24,4 +24,10 @@ private int nro_de_tarjeta;
         this.nro_de_tarjeta = nro_de_tarjeta;
     }
 
+    @Override
+    public String toString() {
+        return "Tarjeta{" + "nro_de_tarjeta=" + nro_de_tarjeta + '}';
+    }
+    
+
 }
