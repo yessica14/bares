@@ -70,7 +70,7 @@ insert into plato values(21,9,"albondiga con ensalada",150);
 insert into plato values(22,10,"milanesa con arroz",180);
 
 
-nsert into reserva(id_reserva,fecha,id_mesa,id_bar,id_cliente) values(20,'2017-04-17',2,11,1);
+insert into reserva(id_reserva,fecha,id_mesa,id_bar,id_cliente) values(20,'2017-04-17',2,11,1);
 insert into reserva(id_reserva,fecha,id_mesa,id_bar,id_cliente) values(21,'2017-04-18',2,11,2);
 insert into reserva(id_reserva,fecha,id_mesa,id_bar,id_cliente) values(22,'2017-04-18',2,11,3);
 
