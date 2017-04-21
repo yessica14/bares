@@ -32,6 +32,16 @@ public Persona(String nombre, String apellido,int dni, String fecha_de_nacimient
 public Persona(){
     
 }
+
+    public Persona(String nombre, int telefono) {
+        this.nombre = nombre;
+        this.telefono = telefono;
+    }
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
+    }
+
 public void setNombre(String nombre){
   this.nombre=nombre;
 }

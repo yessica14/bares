@@ -15,6 +15,11 @@ private int mez;
 private int año;
 private FechaHora fh;
 
+    public Fecha() {
+    }
+
+
+
     public Fecha(int dia, int mez, int año, FechaHora fh) {
         this.dia = dia;
         this.mez = mez;
@@ -67,8 +72,10 @@ private FechaHora fh;
 
     @Override
     public String toString() {
-        return "Fecha{" + "dia=" + dia + ", mez=" + mez + ", a\u00f1o=" + año + ", fh=" + fh + '}';
+        return "{"+ dia + "/" + mez + "/" + año + '}';
     }
+
+  
 
 
 

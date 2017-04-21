@@ -11,15 +11,23 @@ import java.util.ArrayList;
  *
  * @author Yessica-
  */
-public class Mesero {
+public class Mozo extends Persona{
 private int id_mesero;
 private ArrayList<Mesa> listademesas=new ArrayList();
 
 
-    public Mesero() {
+    public Mozo() {
     }
+    public Mozo(String nombre){
+        super(nombre);
+    }
+
+    public Mozo(String nombre, String apellido, int dni, String fecha_de_nacimiento, String domicilio, int telefono) {
+        super(nombre, apellido, dni, fecha_de_nacimiento, domicilio, telefono);
+    }
+    
    
-    public Mesero(int id_mesero) {
+    public Mozo(int id_mesero) {
         this.id_mesero = id_mesero;
     }
     public void asignaciondemesa(Mesa m){

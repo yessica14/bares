@@ -9,35 +9,38 @@ package Modelo;
  *
  * @author Yessica-
  */
-public class Bares {
-private Integer id_bar;
+public class Bebida {
 private String nombre;
+private int precio;
 
-    public Bares() {
+    public Bebida(String nombre, int precio) {
+        this.nombre = nombre;
+        this.precio = precio;
     }
 
-    public Integer getId_bar() {
-        return id_bar;
-    }
 
-    public void setId_bar(Integer id_bar) {
-        this.id_bar = id_bar;
-    }
 
     public String getNombre() {
         return nombre;
     }
+    
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
     @Override
     public String toString() {
-        return "Bares{" + "id_bar=" + id_bar + ", nombre=" + nombre + '}';
+        return "TipodeBebida{" + "nombre=" + nombre + ", precio=" + precio + '}';
     }
 
 
-
-    
 }

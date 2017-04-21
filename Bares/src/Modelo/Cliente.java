@@ -16,6 +16,11 @@ public class Cliente extends Persona{
       
   }
 
+    public Cliente(String nombre, int telefono) {
+        super(nombre, telefono);
+    }
+  
+
     public Cliente(String nombre, String apellido, int dni, String fecha_de_nacimiento, String domicilio, int telefono) {
         super(nombre, apellido, dni, fecha_de_nacimiento, domicilio, telefono);
     }
