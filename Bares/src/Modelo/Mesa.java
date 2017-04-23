@@ -19,7 +19,8 @@ private int total;
 private int sum=0;
 private Fecha fec;  //esto es para la fecha consultada
 private int gastos=0;
-private int cm;
+
+private int cantPersona;
 
 
 
@@ -33,6 +34,15 @@ private int cm;
         this.estado = estado;
         this.fec = fec;
     }
+
+    public int getCantPersona() {
+        return cantPersona;
+    }
+
+    public void setCantPersona(int cantPersona) {
+        this.cantPersona = cantPersona;
+    }
+    
 
     public int getGastos() {
         return gastos;
@@ -95,19 +105,19 @@ private int cm;
     
     
     public void gastosxdiaunamesa(){
-        int GT=0;// variable para calcular el gasto para la fecha consultada
+        
         for (Pedido pedido : listadepedido) {
             if(pedido.getFecha().equals(fec) && estado.equals("disponible")){
-               GT=( pedido.getBebida().getPrecio() + pedido.getPlato().getPrecio())*pedido.getCantpersonas();
-                     setSum(sum +GT);
+               
+                     setSum(pedido.getAcum()+sum);
                      System.out.println("             ");
                      
-                    System.out.println("el gasto de la mesa: "+nroMesa+" atendido por:" +pedido.getMozo().getNombre()+", en el horario de atencion: "+pedido.getFecha().getFh().getHora()+":"+pedido.getFecha().getFh().getMinutos()+" es: "+GT);
+                    System.out.println("el gasto de la mesa: "+nroMesa+" atendido por:" +pedido.getMozo().getNombre()+", en el horario de atencion: "+pedido.getFecha().getFh().getHora()+":"+pedido.getFecha().getFh().getMinutos()+" es: "+sum);
                  
                 }
-                   
+            
                 }
-        System.out.println("                            ");
+       
             
         System.out.println("1) el gasto generado en el dia de la fecha="+fec+ " por el nro de mesa: '"+nroMesa+"' es: "+ sum);
     }
@@ -116,8 +126,8 @@ private int cm;
             if(this.fec.getMez() == pedido.getFecha().getMez()){
                 if(pedido.getFecha().getDia() >=1 && pedido.getFecha().getDia() <=30 ){
                    // System.out.println(" "+gastos);
-                    cm=((pedido.getBebida().getPrecio() + pedido.getPlato().getPrecio()) *pedido.getCantpersonas());
-                    setGastos(gastos=gastos+cm);
+                 
+                    setGastos(gastos=gastos+pedido.getAcum());
                     System.out.println("gastos= "+gastos+" nromesa: "+nroMesa);
                 }
             }

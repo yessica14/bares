@@ -12,46 +12,46 @@ import java.util.ArrayList;
  * @author Yessica-
  */
 public class Pedido {
-private Bebida bebida;
-private Plato plato;
-private int cantpersonas;
+
+private ArrayList <Plato>listadeplatos=new ArrayList();
+private ArrayList<Bebida> listadebebidas=new ArrayList();
+private int contplatos;
+private int contbebidas;
+private int acum;
+
 private Mozo mozo;
 private Fecha fecha;
 
     public Pedido() {
     }
 
-    public Pedido(Bebida bebida, Plato plato, int cantpersonas, Mozo mozo, Fecha fecha) {
-        this.bebida = bebida;
-        this.plato = plato;
-        this.cantpersonas = cantpersonas;
+    public Pedido(Mozo mozo, Fecha fecha) {
         this.mozo = mozo;
         this.fecha = fecha;
     }
     
 
-    public Bebida getBebida() {
-        return bebida;
+    public ArrayList<Plato> getListadeplatos() {
+        return listadeplatos;
     }
 
-    public void setBebida(Bebida bebida) {
-        this.bebida = bebida;
+    public void setListadeplatos(ArrayList<Plato> listadeplatos) {
+        this.listadeplatos = listadeplatos;
     }
 
-    public Plato getPlato() {
-        return plato;
+    public ArrayList<Bebida> getListadebebidas() {
+        return listadebebidas;
     }
 
-    public void setPlato(Plato plato) {
-        this.plato = plato;
+    public void setListadebebidas(ArrayList<Bebida> listadebebidas) {
+        this.listadebebidas = listadebebidas;
     }
-
-    public int getCantpersonas() {
-        return cantpersonas;
+    
+    public void agregarPlato(Plato p){
+        listadeplatos.add(p);
     }
-
-    public void setCantpersonas(int cantpersonas) {
-        this.cantpersonas = cantpersonas;
+    public void agregarBebida(Bebida b){
+         listadebebidas.add(b);
     }
 
 
@@ -71,11 +71,33 @@ private Fecha fecha;
         this.fecha = fecha;
     }
 
-    @Override
-    public String toString() {
-        return "Orden_de_Pedido{" + "bebida=" + bebida + ", plato=" + plato + ", cantpersonas=" + cantpersonas + ", mozo=" + mozo + ", fecha=" + fecha + '}';
+    public int getAcum() {
+        return acum;
     }
 
+    public void setAcum(int acum) {
+        this.acum = acum;
+    }
+    
+    public void calcula(){
+        for (Plato lp : listadeplatos) {
+            contplatos=lp.getPrecio()+contplatos;
+         }
+        for (Bebida lb : listadebebidas) {
+            contbebidas=lb.getPrecio()+contbebidas;
+        }
+        setAcum(contplatos+contbebidas);
+        System.out.println("el acum: "+acum);
+    }
+
+    @Override
+    public String toString() {
+        return "Pedido{" + "listadeplatos=" + listadeplatos + ", listadebebidas=" + listadebebidas + ", contplatos=" + contplatos + ", contbebidas=" + contbebidas + ", acum=" + acum + ", mozo=" + mozo + ", fecha=" + fecha + '}';
+    }
+
+   
+
+    
    
 
 

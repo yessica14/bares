@@ -95,11 +95,11 @@ private Fecha fech1;
          
          for (Mesa mesa : listademesa) {
              int cant=0;
-             for (Pedido pedido: mesa.getListadepedido()) {
-                 cant=pedido.getCantpersonas()+cant;
-             }
+             
+                 
+             
              System.out.println("          ");
-        System.out.println("la mesa nro: "+mesa.getNroMesa()+" tiene: "+cant+ " clientes");
+        System.out.println("la mesa nro: "+mesa.getNroMesa()+" tiene: "+mesa.getCantPersona()+ " clientes");
          }
          
        

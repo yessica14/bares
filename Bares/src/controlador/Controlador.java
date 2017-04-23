@@ -52,22 +52,39 @@ public class Controlador {
       Plato pla4=new Plato("estofado de papa",120);
       Plato pla5=new Plato("pizza a la piedra",120);
       
-      Pedido ped1=new Pedido(b1,pla1,3,mozo1,f1);
-      Pedido ped2=new Pedido(b2,pla2,1,mozo2,f2);
-      Pedido ped3=new Pedido(b3,pla3,1,mozo2,f1);
+      Pedido ped1=new Pedido(mozo1,f1);
+      Pedido ped2=new Pedido(mozo2,f2);
+      Pedido ped3=new Pedido(mozo2,f1);
       
-      Pedido ped4=new Pedido(b3,pla4,5,mozo2,f2);
-      Pedido ped5=new Pedido(b3,pla5,2,mozo2,f2);
+      Pedido ped4=new Pedido(mozo2,f2);
+      Pedido ped5=new Pedido(mozo2,f1);
+      
+      ped1.agregarBebida(b3);
+      ped1.agregarPlato(pla5);
+      ped2.agregarBebida(b1);
+      ped3.agregarPlato(pla2);
+      ped3.agregarBebida(b2);
+      ped5.agregarBebida(b2);
+      ped5.agregarPlato(pla5);
+      
+     
+      
+      ped1.calcula();
+      ped5.calcula();
+      ped2.calcula();
+      ped3.calcula();
+      
+      
+      
       
       m1.agregarPedido(ped3);
-      m1.agregarPedido(ped1);
+      m1.agregarPedido(ped5);
       m2.agregarPedido(ped1);
-     // m2.agregarPedido(ped3);
      m3.agregarPedido(ped2);
       
       m1.gastosxdiaunamesa();
       
-     // m2.gastosxdiaunamesa();
+      m2.gastosxdiaunamesa();
       m3.gastosxdiaunamesa();
       
       m1.gastosxmesaenunmez();

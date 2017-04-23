@@ -12,8 +12,8 @@ import java.util.ArrayList;
  * @author Yessica-
  */
 public class Mozo extends Persona{
-private int id_mesero;
-private ArrayList<Mesa> listademesas=new ArrayList();
+private int id_mozo;
+
 
 
     public Mozo() {
@@ -27,25 +27,9 @@ private ArrayList<Mesa> listademesas=new ArrayList();
     }
     
    
-    public Mozo(int id_mesero) {
-        this.id_mesero = id_mesero;
-    }
-    public void asignaciondemesa(Mesa m){
-     
-    }
-    public void totaldepedidospormesa(){
-      int acum1=0;
-      
-    }
-
-
-
    
 
-
-
-
-
+   
 
 
 }
