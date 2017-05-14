@@ -19,6 +19,7 @@ private int total;
 private int sum=0;
 private Fecha fec;  //esto es para la fecha consultada
 private int gastos=0;
+private String nromesa;
 
 private int cantPersona;
 
@@ -42,6 +43,23 @@ private int cantPersona;
     public void setCantPersona(int cantPersona) {
         this.cantPersona = cantPersona;
     }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
+    public String getNromesa() {
+        return nromesa;
+    }
+
+    public void setNromesa(String nromesa) {
+        this.nromesa = nromesa;
+    }
+    
     
 
     public int getGastos() {

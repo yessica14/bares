@@ -12,13 +12,25 @@ package Modelo;
 public class Bebida {
 private String nombre;
 private int precio;
+private String prec;
 
     public Bebida(String nombre, int precio) {
         this.nombre = nombre;
         this.precio = precio;
     }
+    public Bebida(){
+        
+    }
 
+    public String getPrec() {
+        return prec;
+    }
 
+    public void setPrec(String prec) {
+        this.prec = prec;
+    }
+    
+    
 
     public String getNombre() {
         return nombre;

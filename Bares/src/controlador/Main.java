@@ -9,10 +9,10 @@ import Modelo.*;
  *
  * @author Yessica-
  */
-public class Controlador {
+public class Main {
   
   public static void main(String[] args) {
-     FechaHora fh1=new FechaHora(12,20);
+    /**FechaHora fh1=new FechaHora(12,20);
       FechaHora fh2=new FechaHora(13,20);
       FechaHora fh3=new FechaHora(12,50);
       Fecha f1=new Fecha(19,04,2017,fh1);
@@ -97,8 +97,8 @@ public class Controlador {
       b.cantidaddeReserva();
       b.gastostotalalmez();
       
-      
-      
+      */
+      controlador c=new controlador();
       
       
       
