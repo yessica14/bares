@@ -12,11 +12,26 @@ package Modelo;
 public class Plato {
 private String descripcion;//aqui va que plato es por ejemplo arroz con pollo
 private int precio;
+private String prec;
+
 
     public Plato(String descripcion, int precio) {
         this.descripcion = descripcion;
         this.precio = precio;
     }
+
+    public Plato() {
+    }
+
+    public String getPrec() {
+        return prec;
+    }
+
+    public void setPrec(String prec) {
+        this.prec = prec;
+    }
+    
+    
 
     public String getDescripcion() {
         return descripcion;

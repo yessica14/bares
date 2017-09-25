@@ -10,6 +10,7 @@ package Modelo;
  * @author Yessica-
  */
 public class Bebida {
+    private int cod;
 private String nombre;
 private int precio;
 private String prec;
@@ -18,8 +19,20 @@ private String prec;
         this.nombre = nombre;
         this.precio = precio;
     }
+    public Bebida(String nombre, String prec){
+        this.nombre=nombre;
+        this.prec=prec;
+    }
+    
     public Bebida(){
         
+    }
+    
+
+    public Bebida(int cod, String nombre, String prec) {
+        this.cod = cod;
+        this.nombre = nombre;
+        this.prec = prec;
     }
 
     public String getPrec() {
