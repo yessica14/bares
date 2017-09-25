@@ -145,11 +145,10 @@ private Plato plato;
         if(e.getActionCommand().equals(vbebida.BTN_ELIMINAR_BEBIDA)){
            
             try {
-                JOptionPane.showConfirmDialog(null, "Esta seguro de borrar?", "Confirmar salida", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-                if(JOptionPane.YES_NO_OPTION){
-                removeSelectedRows();}
-                else{
-                }
+                //JOptionPane.showConfirmDialog(null, "Esta seguro de borrar?", "Confirmar salida", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+                //if(JOptionPane.YES_NO_OPTION){
+                removeSelectedRows();
+                
                 
                 System.out.println("");
                 
